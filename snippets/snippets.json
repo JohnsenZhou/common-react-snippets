@@ -36,7 +36,7 @@
   },
 
   "Import Function Component": {
-    "prefix": "impc",
+    "prefix": "imfc",
     "body": ["import React, { FunctionComponent } from 'react'"],
     "description": "Import React, { FunctionComponent }"
   },
@@ -92,6 +92,33 @@
       "export default $1"
     ],
     "description": "Class Component with Constructor"
+  },
+
+  "Function Component With Hooks": {
+    "prefix": "fc",
+    "body": [
+      "import React, { useState, useEffect } from 'react'",
+      " ",
+      "interface $1Props {",
+      "\t",
+      "}",
+      " ",
+      "function $1 (props: $1Props) {",
+      "\tconst {  } = props",
+      "\tconst [${2}, set${2/(.*)/${2:/capitalize}/}] = useState($3)",
+      " ",
+      "\tuseEffect(() => {",
+      "\t\t",
+      "\t}, [])",
+      " ",
+      "\treturn (",
+      "\t\t<div></div>",
+      "\t)",
+      "}",
+      " ",
+      "export default $1"
+    ],
+    "description": "Function Component With Hooks"
   },
 
   "Stateless Function Component": {
