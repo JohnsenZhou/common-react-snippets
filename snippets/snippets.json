@@ -256,6 +256,26 @@
     "description": "Import module style"
   },
 
+  "Mobx observable with comment": {
+    "prefix": "mobs",
+    "body": [
+      "/**  */",
+      "@observable $1 = $2"
+    ],
+    "description": "Mobx observable with comment"
+  },
+
+  "Mobx action with comment": {
+    "prefix": "mact",
+    "body": [
+      "/**  */",
+      "@action $1 = () => {",
+      "\t$2",
+      "}"
+    ],
+    "description": "Mobx action with comment"
+  },
+
   "Div with module class": {
     "prefix": "dwc",
     "body": ["<div className={styles.$1}>$2</div>"],

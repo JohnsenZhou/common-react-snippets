@@ -38,6 +38,8 @@ that work the way that you would expect, not just a copy of the documentation.
 | `ima`   | Import antd                      |
 | `ims`   | Import style                     |
 | `imms`  | Import module style              |
+| `mobs`  | Mobx observable with comment     |
+| `mact`  | Mobx action with comment         |
 | `dwgc`  | Div with global class            |
 | `mlg`   | My Log                           |
 
@@ -245,6 +247,22 @@ import styles from './|.less'
 
 ```javascript
 import styles from './|.module.less'
+```
+
+### mobs - Mobx observable with comment
+
+```javascript
+/**  */
+@observable | = |
+```
+
+### mact - Mobx action with comment
+
+```javascript
+/**  */
+@action | = () => {
+  |
+}
 ```
 
 ### dwc - Div with module class
