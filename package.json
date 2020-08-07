@@ -2,13 +2,13 @@
 	"name": "common-react-snippets",
 	"displayName": "common-react-snippets",
 	"description": "Common React Snippets for VS Code.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "JohnsenZhou",
 	"icon": "images/logo.png",
 	"repository": {
-    "type": "git",
-    "url": "https://github.com/JohnsenZhou/common-react-snippets.git"
-  },
+		"type": "git",
+		"url": "https://github.com/JohnsenZhou/common-react-snippets.git"
+	},
 	"engines": {
 		"vscode": "^1.47.0"
 	},
