@@ -2,7 +2,7 @@
 	"name": "common-react-snippets",
 	"displayName": "common-react-snippets",
 	"description": "Common React Snippets for VS Code.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "JohnsenZhou",
 	"engines": {
 		"vscode": "^1.47.0"
@@ -11,28 +11,28 @@
 		"Snippets"
 	],
 	"activationEvents": [
-        "onCommand:common-react-snippets.helloWorld"
+		"onCommand:common-react-snippets.helloWorld"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"snippets": [
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/snippets.json"
-      }
-    ],
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "common-react-snippets.helloWorld",
