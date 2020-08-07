@@ -3,6 +3,7 @@
 	"displayName": "common-react-snippets",
 	"description": "Common React Snippets for VS Code.",
 	"version": "0.0.1",
+	"publisher": "JohnsenZhou",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
