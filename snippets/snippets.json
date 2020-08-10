@@ -269,7 +269,7 @@
     "prefix": "mact",
     "body": [
       "/**  */",
-      "@action $1 = () => {",
+      "@action $1 = async () => {",
       "\t$2",
       "}"
     ],
