@@ -37,6 +37,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `ren`   | render                           |
 | `rprop` | Render Prop                      |
 | `ima`   | Import antd                      |
+| `imc`   | Import classnames                |
 | `ims`   | Import style                     |
 | `imms`  | Import module style              |
 | `mobs`  | Mobx observable with comment     |
@@ -300,6 +301,12 @@ export default |
 
 ```javascript
 import { | } from 'antd'
+```
+
+### imc - Import classnames
+
+```javascript
+import cls from 'classnames'
 ```
 
 ### ims - Import style
