@@ -274,6 +274,12 @@
     "description": "Import antd"
   },
 
+  "Import classnames": {
+    "prefix": "imc",
+    "body": ["import cls from 'classnames'"],
+    "description": "Import classnames"
+  },
+
   "Import style": {
     "prefix": "ims",
     "body": ["import styles from './$1.less'"],
