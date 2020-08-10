@@ -260,7 +260,7 @@ import styles from './|.module.less'
 
 ```javascript
 /**  */
-@action | = () => {
+@action | = async () => {
   |
 }
 ```
