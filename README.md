@@ -19,6 +19,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `impc`  | Import React / PureComponent     |
 | `imfc`  | Import React / FunctionComponent |
 | `cc`    | Class Component                  |
+| `pc`    | Pure Component                   |
 | `ccc`   | Class Component With Constructor |
 | `fc`    | Function Component With hooks    |
 | `sfc`   | Stateless Function Component     |
@@ -84,7 +85,34 @@ import React, { PureComponent } from 'react'
 ### cc - Class Component
 
 ```javascript
-class | extends Component {
+import React, { Component } from 'react'
+interface |Props {
+  
+}
+interface |State {
+  
+}
+class | extends Component<|Props, |State> {
+  state = { | },
+  render() {
+    return ( | )
+  }
+}
+
+export default |
+```
+
+### pc - Pure Component
+
+```javascript
+import React, { PureComponent } from 'react'
+interface |Props {
+  
+}
+interface |State {
+  
+}
+class | extends PureComponent<|Props, |State> {
   state = { | },
   render() {
     return ( | )
@@ -97,8 +125,15 @@ export default |
 ### ccc - Class Component With Constructor
 
 ```javascript
-class | extends Component {
-  constructor(props) {
+import React, { Component } from 'react'
+interface |Props {
+  
+}
+interface |State {
+  
+}
+class | extends Component<|Props, |State> {
+  constructor(props: |Props) {
     super(props)
     this.state = { | }
   }
@@ -110,11 +145,41 @@ class | extends Component {
 export default |
 ```
 
+### fc - Function Component With hooks
+
+```javascript
+import React, { useState, useEffect } from 'react'
+
+interface |Props {
+  
+}
+function | (props: |Props) {
+  const {  } = props
+  const [|, set|] = useState(|)
+  useEffect(() => {
+
+  }, [])
+  return (
+    <div></div>
+  )
+}
+
+export default |
+```
+
 ### sfc - Stateless Function Component
 
 ```javascript
-const | = props => {
-  return ( | )
+import React from 'react'
+
+interface |Props {
+  
+}
+function | (props: |Props) {
+  const {  } = props
+  return (
+    <div></div>
+  )
 }
 
 export default |

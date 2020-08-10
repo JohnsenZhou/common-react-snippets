@@ -66,16 +66,41 @@
     "description": "Class Component"
   },
 
+  "Pure Component": {
+    "prefix": "pc",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      " ",
+      "interface $1Props {",
+      "\t$2",
+      "}",
+      " ",
+      "interface $1State {",
+      "\t$3",
+      "}",
+      " ",
+      "class $1 extends PureComponent<$1Props, $1State> {",
+      "\tstate = {  }",
+      "\trender() { ",
+      "\t\treturn ( $0 )",
+      "\t}",
+      "}",
+      " ",
+      "export default $1"
+    ],
+    "description": "Pure Component"
+  },
+
   "Class Component Constructor": {
     "prefix": "ccc",
     "body": [
       "import React, { Component } from 'react'",
       " ",
-      "export interface $1Props {",
+      "interface $1Props {",
       "\t$2",
       "}",
       " ",
-      "export interface $1State {",
+      "interface $1State {",
       "\t$3",
       "}",
       " ",
@@ -124,13 +149,18 @@
   "Stateless Function Component": {
     "prefix": "sfc",
     "body": [
-      "export interface $1Props {",
+      "import React from 'react'",
+      " ",
+      "interface $1Props {",
       "\t$2",
       "}",
       " ",
-      "const $1: React.SFC<$1Props> = ($3) => {",
-      "\treturn ( $0 )",
+      "function $1 (props: $1Props) {",
+      "\tconst {  } = props",
       "}",
+      "\treturn (",
+      "\t\t<div></div>",
+      "\t)",
       " ",
       "export default $1"
     ],
@@ -218,11 +248,11 @@
   "Render Prop": {
     "prefix": "rprop",
     "body": [
-      "export interface $1Props {",
+      "interface $1Props {",
       "\trender: (state: $1State) => JSX.Element",
       "}",
       " ",
-      "export interface $1State {",
+      "interface $1State {",
       "\t$2",
       "}",
       " ",
