@@ -157,10 +157,11 @@
       " ",
       "function $1 (props: $1Props) {",
       "\tconst {  } = props",
-      "}",
+      " ",
       "\treturn (",
       "\t\t<div></div>",
       "\t)",
+      "}",
       " ",
       "export default $1"
     ],
@@ -272,6 +273,12 @@
     "prefix": "ima",
     "body": ["import { $1 } from 'antd'"],
     "description": "Import antd"
+  },
+
+  "Import module": {
+    "prefix": "imp",
+    "body": ["import $1 from '$2'"],
+    "description": "Import module"
   },
 
   "Import classnames": {

@@ -37,6 +37,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `ren`   | render                           |
 | `rprop` | Render Prop                      |
 | `ima`   | Import antd                      |
+| `imp`   | Import module                    |
 | `imc`   | Import classnames                |
 | `ims`   | Import style                     |
 | `imms`  | Import module style              |

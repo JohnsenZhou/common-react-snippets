@@ -4,6 +4,12 @@ All notable changes to the "common-react-snippets" extension will be documented 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.8.0] - 2020-08-13
+
+### Feature
+
+- Import module
+
 ## [0.5.0] - 2020-08-10
 
 ### Feature
