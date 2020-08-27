@@ -43,6 +43,7 @@ that work the way that you would expect, not just a copy of the documentation.
 | `imms`  | Import module style              |
 | `mobs`  | Mobx observable with comment     |
 | `mact`  | Mobx action with comment         |
+| `dwc`   | Div with module class            |
 | `dwgc`  | Div with global class            |
 | `mlg`   | My Log                           |
 
